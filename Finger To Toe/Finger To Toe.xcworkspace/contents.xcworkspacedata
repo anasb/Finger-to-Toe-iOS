@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Finger To Toe.xcodeproj">
+      location = "group:/Users/anasb/dev/cornell/health-tech/Finger-to-Toe-iOS/Finger To Toe/Finger-To-Toe.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

@@ -31,7 +31,7 @@
 
 /* Begin PBXFileReference section */
 		690D38A52A2B6D79B30D3043 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		B865E9101C0BBAF100771F8E /* Finger To Toe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Finger To Toe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B865E9101C0BBAF100771F8E /* Finger-To-Toe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Finger-To-Toe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B865E9141C0BBAF100771F8E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B865E9161C0BBAF100771F8E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B865E9171C0BBAF100771F8E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -39,7 +39,7 @@
 		B865E91F1C0BBAF100771F8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B865E9221C0BBAF100771F8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B865E9241C0BBAF100771F8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B865E9291C0BBAF200771F8E /* Finger To ToeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Finger To ToeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B865E9291C0BBAF200771F8E /* Finger-To-Toe.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Finger-To-Toe.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B865E92D1C0BBAF200771F8E /* Finger_To_ToeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Finger_To_ToeTests.m; sourceTree = "<group>"; };
 		B865E92F1C0BBAF200771F8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B865E9381C0BC1CA00771F8E /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
@@ -94,8 +94,8 @@
 		B865E9111C0BBAF100771F8E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B865E9101C0BBAF100771F8E /* Finger To Toe.app */,
-				B865E9291C0BBAF200771F8E /* Finger To ToeTests.xctest */,
+				B865E9101C0BBAF100771F8E /* Finger-To-Toe.app */,
+				B865E9291C0BBAF200771F8E /* Finger-To-Toe.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -148,9 +148,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B865E90F1C0BBAF100771F8E /* Finger To Toe */ = {
+		B865E90F1C0BBAF100771F8E /* Finger-To-Toe */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B865E9321C0BBAF200771F8E /* Build configuration list for PBXNativeTarget "Finger To Toe" */;
+			buildConfigurationList = B865E9321C0BBAF200771F8E /* Build configuration list for PBXNativeTarget "Finger-To-Toe" */;
 			buildPhases = (
 				16EB32C124BDEF1CC144CBF5 /* Check Pods Manifest.lock */,
 				B865E90C1C0BBAF100771F8E /* Sources */,
@@ -163,14 +163,14 @@
 			);
 			dependencies = (
 			);
-			name = "Finger To Toe";
+			name = "Finger-To-Toe";
 			productName = "Finger To Toe";
-			productReference = B865E9101C0BBAF100771F8E /* Finger To Toe.app */;
+			productReference = B865E9101C0BBAF100771F8E /* Finger-To-Toe.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B865E9281C0BBAF200771F8E /* Finger To ToeTests */ = {
+		B865E9281C0BBAF200771F8E /* Finger-To-ToeTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B865E9351C0BBAF200771F8E /* Build configuration list for PBXNativeTarget "Finger To ToeTests" */;
+			buildConfigurationList = B865E9351C0BBAF200771F8E /* Build configuration list for PBXNativeTarget "Finger-To-ToeTests" */;
 			buildPhases = (
 				B865E9251C0BBAF200771F8E /* Sources */,
 				B865E9261C0BBAF200771F8E /* Frameworks */,
@@ -181,9 +181,9 @@
 			dependencies = (
 				B865E92B1C0BBAF200771F8E /* PBXTargetDependency */,
 			);
-			name = "Finger To ToeTests";
+			name = "Finger-To-ToeTests";
 			productName = "Finger To ToeTests";
-			productReference = B865E9291C0BBAF200771F8E /* Finger To ToeTests.xctest */;
+			productReference = B865E9291C0BBAF200771F8E /* Finger-To-Toe.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -204,7 +204,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B865E90B1C0BBAF100771F8E /* Build configuration list for PBXProject "Finger To Toe" */;
+			buildConfigurationList = B865E90B1C0BBAF100771F8E /* Build configuration list for PBXProject "Finger-To-Toe" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -217,8 +217,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B865E90F1C0BBAF100771F8E /* Finger To Toe */,
-				B865E9281C0BBAF200771F8E /* Finger To ToeTests */,
+				B865E90F1C0BBAF100771F8E /* Finger-To-Toe */,
+				B865E9281C0BBAF200771F8E /* Finger-To-ToeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -317,7 +317,7 @@
 /* Begin PBXTargetDependency section */
 		B865E92B1C0BBAF200771F8E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B865E90F1C0BBAF100771F8E /* Finger To Toe */;
+			target = B865E90F1C0BBAF100771F8E /* Finger-To-Toe */;
 			targetProxy = B865E92A1C0BBAF200771F8E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -431,7 +431,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "SDL.Finger-To-Toe";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Finger-To-Toe";
 			};
 			name = Debug;
 		};
@@ -444,7 +444,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "SDL.Finger-To-Toe";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Finger-To-Toe";
 			};
 			name = Release;
 		};
@@ -455,8 +455,8 @@
 				INFOPLIST_FILE = "Finger To ToeTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "SDL.Finger-To-ToeTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Finger To Toe.app/Finger To Toe";
+				PRODUCT_NAME = "Finger-To-Toe";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Finger-To-Toe.app/Finger-To-Toe";
 			};
 			name = Debug;
 		};
@@ -467,15 +467,15 @@
 				INFOPLIST_FILE = "Finger To ToeTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "SDL.Finger-To-ToeTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Finger To Toe.app/Finger To Toe";
+				PRODUCT_NAME = "Finger-To-Toe";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Finger-To-Toe.app/Finger-To-Toe";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B865E90B1C0BBAF100771F8E /* Build configuration list for PBXProject "Finger To Toe" */ = {
+		B865E90B1C0BBAF100771F8E /* Build configuration list for PBXProject "Finger-To-Toe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B865E9301C0BBAF200771F8E /* Debug */,
@@ -484,7 +484,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B865E9321C0BBAF200771F8E /* Build configuration list for PBXNativeTarget "Finger To Toe" */ = {
+		B865E9321C0BBAF200771F8E /* Build configuration list for PBXNativeTarget "Finger-To-Toe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B865E9331C0BBAF200771F8E /* Debug */,
@@ -493,7 +493,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B865E9351C0BBAF200771F8E /* Build configuration list for PBXNativeTarget "Finger To ToeTests" */ = {
+		B865E9351C0BBAF200771F8E /* Build configuration list for PBXNativeTarget "Finger-To-ToeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B865E9361C0BBAF200771F8E /* Debug */,
