@@ -33,14 +33,35 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9aD-Lt-wq8" userLabel="Instructions">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stand so that your feet appear on either side of the blue line." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ax-SZ-T5e">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ax-SZ-T5e">
                                         <rect key="frame" x="18" y="35" width="564" height="40"/>
                                         <animations/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="wif-wI-gGb"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Stand so that your feet appear on either side of the ">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="blue line">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.30196078431372547" green="0.27058823529411763" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=".">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQd-fM-yO9">
@@ -193,6 +214,9 @@
                                         <integer key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="pressedStart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AdP-7V-538"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>
@@ -365,10 +389,10 @@
             </objects>
             <point key="canvasLocation" x="1604" y="-352"/>
         </scene>
-        <!--Graphs View Controller-->
+        <!--Progress-->
         <scene sceneID="4jj-h4-HO8">
             <objects>
-                <viewController storyboardIdentifier="graphsViewController" id="dQ8-uY-y0A" customClass="GraphsViewController" sceneMemberID="viewController">
+                <viewController id="dQ8-uY-y0A" customClass="GraphsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aq6-Mk-dRD"/>
                         <viewControllerLayoutGuide type="bottom" id="v1o-JM-owt"/>
@@ -377,21 +401,58 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Graphs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8sg-nj-qwH">
-                                <rect key="frame" x="148" y="118" width="56" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have bent 402mm centimeters today." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jml-q9-lTp">
+                                <rect key="frame" x="20" y="113" width="560" height="77"/>
                                 <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="77" id="4Kr-4r-EAM"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Progress_chart" translatesAutoresizingMaskIntoConstraints="NO" id="9OG-4M-OaX">
+                                <rect key="frame" x="47" y="216" width="507" height="305"/>
+                                <animations/>
+                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9OG-4M-OaX" firstAttribute="top" secondItem="jml-q9-lTp" secondAttribute="bottom" constant="26" id="PKF-c0-jcD"/>
+                            <constraint firstItem="jml-q9-lTp" firstAttribute="leading" secondItem="H4B-FV-JG1" secondAttribute="leadingMargin" id="YII-iI-yAS"/>
+                            <constraint firstItem="jml-q9-lTp" firstAttribute="top" secondItem="aq6-Mk-dRD" secondAttribute="bottom" constant="49" id="cne-QA-sSe"/>
+                            <constraint firstItem="v1o-JM-owt" firstAttribute="top" secondItem="9OG-4M-OaX" secondAttribute="bottom" constant="79" id="eSJ-Ek-6wi"/>
+                            <constraint firstItem="jml-q9-lTp" firstAttribute="trailing" secondItem="H4B-FV-JG1" secondAttribute="trailingMargin" id="kLB-9v-nPh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9OG-4M-OaX" secondAttribute="trailing" constant="26" id="uqN-t7-dom"/>
+                            <constraint firstItem="9OG-4M-OaX" firstAttribute="leading" secondItem="H4B-FV-JG1" secondAttribute="leadingMargin" constant="27" id="yAD-hX-a9f"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Progress" id="AUI-xO-dBq"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wAc-Tv-peS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1592" y="430"/>
+            <point key="canvasLocation" x="2247" y="340"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Aeu-Av-EU6">
+            <objects>
+                <navigationController storyboardIdentifier="graphsViewController" id="XMB-GV-keC" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5Yc-11-HKF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="dQ8-uY-y0A" kind="relationship" relationship="rootViewController" id="y4d-cJ-Odv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ybz-tb-xeX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1604" y="340"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Progress_chart" width="242" height="146"/>
+    </resources>
 </document>

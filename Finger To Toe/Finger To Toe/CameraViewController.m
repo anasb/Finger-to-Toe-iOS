@@ -70,4 +70,29 @@
     self.instructionsview.transform = transform;
 }
 
+- (IBAction)pressedStart:(id)sender
+{
+    NSTimeInterval speed = 0.3f;
+    
+    UIButton *button = (UIButton*)sender;
+    if ([button.titleLabel.text isEqualToString:@"Start"]) {
+        
+        [UIView animateWithDuration:speed animations:^{
+            self.instructionsview.alpha = 0.f;
+        } completion:^(BOOL finished) {
+            [button setTitle:@"Complete" forState:UIControlStateNormal];
+        }];
+        
+    } else {
+        
+        [UIView animateWithDuration:speed animations:^{
+            self.instructionsview.alpha = 1.f;
+        } completion:^(BOOL finished) {
+            [button setTitle:@"Start" forState:UIControlStateNormal];
+            
+            [[[[UIApplication sharedApplication] windows] objectAtIndex:0] setRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"graphsViewController"]];
+        }];
+    }
+}
+
 @end
