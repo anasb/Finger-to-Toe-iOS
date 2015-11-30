@@ -9,9 +9,12 @@
 #import "CameraViewController.h"
 #import <AVFoundation/AVFoundation.h>
 
+#define DEGREES_TO_RADIANS(angle) ((angle) / 180.0 * M_PI)
+
 @interface CameraViewController ()
 
 @property (strong, nonatomic) IBOutlet UIView *cameraView;
+@property (strong, nonatomic) IBOutlet UIView *instructionsview;
 
 @end
 
@@ -23,6 +26,10 @@
     self.cameraView.backgroundColor = [UIColor redColor];
 }
 
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+}
+
 - (BOOL)prefersStatusBarHidden
 {
     return YES;
@@ -30,10 +37,11 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
-    [self initCamera];
+    [self setupCamera];
+    [self setupInstructions];
 }
 
-- (void)initCamera
+- (void)setupCamera
 {
     AVCaptureSession *session                = [[AVCaptureSession alloc] init];
     session.sessionPreset                    = AVCaptureSessionPresetPhoto;
@@ -54,8 +62,12 @@
     }
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
+- (void)setupInstructions
+{
+    // Rotate
+    double rads = DEGREES_TO_RADIANS(90);
+    CGAffineTransform transform = CGAffineTransformRotate(self.instructionsview.transform, rads);
+    self.instructionsview.transform = transform;
 }
 
 @end
