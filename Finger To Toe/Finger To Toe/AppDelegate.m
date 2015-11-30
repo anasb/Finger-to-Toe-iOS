@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <SingleLineInput/SingleLineTextField.h>
 
 NSString * const USER_HAS_SIGNED_UP = @"USER_HAS_SIGNED_UP";
 
@@ -24,6 +25,13 @@ NSString * const USER_HAS_SIGNED_UP = @"USER_HAS_SIGNED_UP";
     if (![[NSUserDefaults standardUserDefaults] boolForKey:USER_HAS_SIGNED_UP]) {
         [self.window setRootViewController:[self.window.rootViewController.storyboard instantiateViewControllerWithIdentifier:@"signupViewController"]];
     }
+    
+    // Customize input fields
+    [[SingleLineTextField appearance] setLineNormalColor:[UIColor grayColor]];
+    [[SingleLineTextField appearance] setLineSelectedColor:[UIColor colorWithRed:0.1446 green:0.4927 blue:1.0 alpha:1.0]];
+    [[SingleLineTextField appearance] setInputPlaceHolderColor:[UIColor grayColor]];
+    [[SingleLineTextField appearance] setInputFont:[UIFont boldSystemFontOfSize:16]];
+    [[SingleLineTextField appearance] setPlaceHolderFont:[UIFont boldSystemFontOfSize:14]];
     
     return YES;
 }

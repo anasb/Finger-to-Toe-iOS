@@ -1,0 +1,10 @@
+PODS:
+  - SingleLineInput (HEAD based on 1.0.7)
+
+DEPENDENCIES:
+  - SingleLineInput (HEAD)
+
+SPEC CHECKSUMS:
+  SingleLineInput: 4def171b91a2325d315bc8896f952b83f9941666
+
+COCOAPODS: 0.39.0

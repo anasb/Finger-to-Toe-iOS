@@ -1,0 +1,527 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		34D28B0E0A469FF55F50EAFC6319C671 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		5CE1D1A1054AF29A567F9B67FBB87F07 /* SingleLineInput-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C69ACF6538E0AC8528471E62D914261F /* SingleLineInput-dummy.m */; };
+		5E9A4900EF79D221F8C1ADA50B9C2F2F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		C75CD562463C8C3F865FC8ABF1626F0F /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 272643F56613CA0D336AE3DBF19DC404 /* Pods-dummy.m */; };
+		CBA37C88FDFBF150397A3E7E586445D7 /* SingleLineTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = E27EA890CEFB40EB02879EA7C56451EC /* SingleLineTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E1487D4621B578E23D1A8E2B773C0B46 /* SingleLineTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A756ED4C0DF7DD7E83C145C0954F68 /* SingleLineTextField.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		91E8AF9AF276DEE8A55989C031259EFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D95CD08481AA7AE90A254707B2F0239;
+			remoteInfo = "SingleLineInput-SingleLineInput";
+		};
+		D79D695992E26F2F2F5C72A1C46AC173 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDEAEDFA47FF97F9817CD9E108825CD7;
+			remoteInfo = SingleLineInput;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		10834806BD7B412BC24F347361FA2C8E /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		1D8217F1715BC9E7A1F9C738DC328876 /* SingleLineInput.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SingleLineInput.xcconfig; sourceTree = "<group>"; };
+		272643F56613CA0D336AE3DBF19DC404 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		37DB56D75062CC75FCB0966E1C6E8A8E /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3EDF9C4D62E7790C08276BADBC049865 /* SingleLineInput-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SingleLineInput-prefix.pch"; sourceTree = "<group>"; };
+		4E762F23EC34ED4A6FF3312D84E33A40 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		6911BECA35E7518D864239B7E898EEF3 /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
+		6D5967F29CFD5F5B6AB8A34291B38824 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		98C98CDFB3F20F2925F6CD1F141BB14F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		A1A36D34413696BE466E2CA0AFF194DA /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		A8D4E5323A135D471B3CF5BA6971E6A8 /* SingleLineInput.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SingleLineInput.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C69ACF6538E0AC8528471E62D914261F /* SingleLineInput-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SingleLineInput-dummy.m"; sourceTree = "<group>"; };
+		D7A756ED4C0DF7DD7E83C145C0954F68 /* SingleLineTextField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SingleLineTextField.m; path = Pod/Classes/SingleLineTextField.m; sourceTree = "<group>"; };
+		DA65CE65BC2105E629F37F322BC8270A /* libSingleLineInput.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSingleLineInput.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E27EA890CEFB40EB02879EA7C56451EC /* SingleLineTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SingleLineTextField.h; path = Pod/Classes/SingleLineTextField.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1BAC599AB213F1C810BA7CCF475A0871 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34D28B0E0A469FF55F50EAFC6319C671 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		287783C845BFB53FC750DCCE850991D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E2867455CCC2F71C25B1E7543BA6F16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E9A4900EF79D221F8C1ADA50B9C2F2F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		037C0CA694176A3C0915F62C9D20B3E6 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B3D1D13E0C6553800746CB8FD61CF946 /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		0AD24ECA125F68C8742AC8C020D2C356 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1D8217F1715BC9E7A1F9C738DC328876 /* SingleLineInput.xcconfig */,
+				C69ACF6538E0AC8528471E62D914261F /* SingleLineInput-dummy.m */,
+				3EDF9C4D62E7790C08276BADBC049865 /* SingleLineInput-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SingleLineInput";
+			sourceTree = "<group>";
+		};
+		79CF75D7D8DC55E72AFDF12CF1691BF2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B40D823A2FF4F8E52CA348B32EE78530 /* SingleLineInput */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				79CF75D7D8DC55E72AFDF12CF1691BF2 /* Pods */,
+				9042D92DA3DA84ABD6681730FC10C570 /* Products */,
+				037C0CA694176A3C0915F62C9D20B3E6 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9042D92DA3DA84ABD6681730FC10C570 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6D5967F29CFD5F5B6AB8A34291B38824 /* libPods.a */,
+				DA65CE65BC2105E629F37F322BC8270A /* libSingleLineInput.a */,
+				A8D4E5323A135D471B3CF5BA6971E6A8 /* SingleLineInput.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B3D1D13E0C6553800746CB8FD61CF946 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				37DB56D75062CC75FCB0966E1C6E8A8E /* Pods-acknowledgements.markdown */,
+				10834806BD7B412BC24F347361FA2C8E /* Pods-acknowledgements.plist */,
+				272643F56613CA0D336AE3DBF19DC404 /* Pods-dummy.m */,
+				6911BECA35E7518D864239B7E898EEF3 /* Pods-frameworks.sh */,
+				A1A36D34413696BE466E2CA0AFF194DA /* Pods-resources.sh */,
+				4E762F23EC34ED4A6FF3312D84E33A40 /* Pods.debug.xcconfig */,
+				98C98CDFB3F20F2925F6CD1F141BB14F /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		B40D823A2FF4F8E52CA348B32EE78530 /* SingleLineInput */ = {
+			isa = PBXGroup;
+			children = (
+				E27EA890CEFB40EB02879EA7C56451EC /* SingleLineTextField.h */,
+				D7A756ED4C0DF7DD7E83C145C0954F68 /* SingleLineTextField.m */,
+				0AD24ECA125F68C8742AC8C020D2C356 /* Support Files */,
+			);
+			path = SingleLineInput;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		79A423D64EF29F6EAAB9366353CA6EFC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBA37C88FDFBF150397A3E7E586445D7 /* SingleLineTextField.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3203569774BEA2AC69C4872B870B700B /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10A7A3C642A9607D33C584156F2FD012 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				2B32D7A37DAC7F600EAEF16C419DA9F7 /* Sources */,
+				1BAC599AB213F1C810BA7CCF475A0871 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F0E30C8F046AE0F0E9F816E9C393C23 /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = 6D5967F29CFD5F5B6AB8A34291B38824 /* libPods.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		8D95CD08481AA7AE90A254707B2F0239 /* SingleLineInput-SingleLineInput */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBEEB9863F78E96254F469782C91B488 /* Build configuration list for PBXNativeTarget "SingleLineInput-SingleLineInput" */;
+			buildPhases = (
+				5BC6FE71292E2E88ED6078F354D80C5D /* Sources */,
+				287783C845BFB53FC750DCCE850991D5 /* Frameworks */,
+				F2167690F9513D5637D4D04C301084F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SingleLineInput-SingleLineInput";
+			productName = "SingleLineInput-SingleLineInput";
+			productReference = A8D4E5323A135D471B3CF5BA6971E6A8 /* SingleLineInput.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		BDEAEDFA47FF97F9817CD9E108825CD7 /* SingleLineInput */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0C355D62A9E077835F75180B3CCFFCB /* Build configuration list for PBXNativeTarget "SingleLineInput" */;
+			buildPhases = (
+				F3E9051CAEF7489FEB0748A3CABF5158 /* Sources */,
+				2E2867455CCC2F71C25B1E7543BA6F16 /* Frameworks */,
+				79A423D64EF29F6EAAB9366353CA6EFC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D3F57546D5A088D69D029250208400A1 /* PBXTargetDependency */,
+			);
+			name = SingleLineInput;
+			productName = SingleLineInput;
+			productReference = DA65CE65BC2105E629F37F322BC8270A /* libSingleLineInput.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 9042D92DA3DA84ABD6681730FC10C570 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3203569774BEA2AC69C4872B870B700B /* Pods */,
+				BDEAEDFA47FF97F9817CD9E108825CD7 /* SingleLineInput */,
+				8D95CD08481AA7AE90A254707B2F0239 /* SingleLineInput-SingleLineInput */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F2167690F9513D5637D4D04C301084F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B32D7A37DAC7F600EAEF16C419DA9F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C75CD562463C8C3F865FC8ABF1626F0F /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BC6FE71292E2E88ED6078F354D80C5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3E9051CAEF7489FEB0748A3CABF5158 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CE1D1A1054AF29A567F9B67FBB87F07 /* SingleLineInput-dummy.m in Sources */,
+				E1487D4621B578E23D1A8E2B773C0B46 /* SingleLineTextField.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1F0E30C8F046AE0F0E9F816E9C393C23 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SingleLineInput;
+			target = BDEAEDFA47FF97F9817CD9E108825CD7 /* SingleLineInput */;
+			targetProxy = D79D695992E26F2F2F5C72A1C46AC173 /* PBXContainerItemProxy */;
+		};
+		D3F57546D5A088D69D029250208400A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SingleLineInput-SingleLineInput";
+			target = 8D95CD08481AA7AE90A254707B2F0239 /* SingleLineInput-SingleLineInput */;
+			targetProxy = 91E8AF9AF276DEE8A55989C031259EFE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4C18FFC7D4530821632D3D39D42BDAB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D8217F1715BC9E7A1F9C738DC328876 /* SingleLineInput.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = SingleLineInput;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		521F6E74C4C2621964BC0F56D663C337 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E762F23EC34ED4A6FF3312D84E33A40 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		568DCA3CFF0A743AB462B80B2948A6F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D8217F1715BC9E7A1F9C738DC328876 /* SingleLineInput.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SingleLineInput/SingleLineInput-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		5CE5176205D06FF3FFE3DDDA9291E44B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		6CC342E508C0C9455746C1AE7978DA3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98C98CDFB3F20F2925F6CD1F141BB14F /* Pods.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		74857149DC1E0D599B8A01A78349A926 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A68CD648500BAC21CB678957EA67047C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D8217F1715BC9E7A1F9C738DC328876 /* SingleLineInput.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SingleLineInput/SingleLineInput-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		FC257C6F556951D86B14AE26A3236B02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D8217F1715BC9E7A1F9C738DC328876 /* SingleLineInput.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = SingleLineInput;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		10A7A3C642A9607D33C584156F2FD012 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				521F6E74C4C2621964BC0F56D663C337 /* Debug */,
+				6CC342E508C0C9455746C1AE7978DA3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CE5176205D06FF3FFE3DDDA9291E44B /* Debug */,
+				74857149DC1E0D599B8A01A78349A926 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBEEB9863F78E96254F469782C91B488 /* Build configuration list for PBXNativeTarget "SingleLineInput-SingleLineInput" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C18FFC7D4530821632D3D39D42BDAB4 /* Debug */,
+				FC257C6F556951D86B14AE26A3236B02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0C355D62A9E077835F75180B3CCFFCB /* Build configuration list for PBXNativeTarget "SingleLineInput" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A68CD648500BAC21CB678957EA67047C /* Debug */,
+				568DCA3CFF0A743AB462B80B2948A6F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

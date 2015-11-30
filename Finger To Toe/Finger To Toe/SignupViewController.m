@@ -7,8 +7,14 @@
 //
 
 #import "SignupViewController.h"
+#import <SingleLineInput/SingleLineTextField.h>
 
 @interface SignupViewController ()
+
+@property (strong, nonatomic) IBOutlet SingleLineTextField *nameTextField;
+@property (strong, nonatomic) IBOutlet SingleLineTextField *ageTextField;
+@property (strong, nonatomic) IBOutlet SingleLineTextField *heightTextField;
+@property (strong, nonatomic) IBOutlet SingleLineTextField *conditionsTextField;
 
 @end
 
@@ -16,22 +22,32 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (BOOL)prefersStatusBarHidden
+{
+    return NO;
 }
-*/
+
+- (IBAction)pressedSignup:(id)sender
+{
+    if (self.nameTextField.text.length == 0) {
+        [self.nameTextField becomeFirstResponder];
+        return;
+    }
+    
+    [[NSUserDefaults standardUserDefaults] setObject:self.nameTextField.text forKey:@"username"];
+    [[NSUserDefaults standardUserDefaults] setObject:self.ageTextField.text forKey:@"age"];
+    [[NSUserDefaults standardUserDefaults] setObject:self.heightTextField.text forKey:@"height"];
+    [[NSUserDefaults standardUserDefaults] setObject:self.conditionsTextField.text forKey:@"conditions"];
+    
+    [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"USER_HAS_SIGNED_UP"];
+    
+    [[[[UIApplication sharedApplication] windows] objectAtIndex:0] setRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"cameraViewController"]];
+}
 
 @end
