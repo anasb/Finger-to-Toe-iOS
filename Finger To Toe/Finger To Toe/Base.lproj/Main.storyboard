@@ -17,32 +17,72 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R33-aK-Qbu">
-                                <rect key="frame" x="197" y="530" width="206" height="51"/>
-                                <animations/>
-                                <color key="backgroundColor" red="0.70980392160000005" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="51" id="LOa-GB-h8d"/>
-                                    <constraint firstAttribute="width" constant="206" id="lY7-LA-UTK"/>
-                                </constraints>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LrQ-1C-Ugy">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <animations/>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xnx-sz-2Ds" userLabel="Line Divider">
+                                <rect key="frame" x="0.0" y="298.5" width="600" height="3"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.30196078431372547" green="0.27058823529411763" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="3" id="aTL-4t-J5t"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9aD-Lt-wq8" userLabel="Instructions">
+                                <rect key="frame" x="0.0" y="137" width="600" height="324"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ax-SZ-T5e">
+                                        <rect key="frame" x="161" y="50" width="42" height="21"/>
+                                        <animations/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Stand so that your feet appear on either side of the blue line.">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" red="0.66666668653488159" green="0.66145835320154822" blue="0.66666668653488159" alpha="0.33888955152671757" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R33-aK-Qbu">
+                                <rect key="frame" x="210" y="546" width="180" height="44"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="LOa-GB-h8d"/>
+                                    <constraint firstAttribute="width" constant="180" id="lY7-LA-UTK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="22"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="R33-aK-Qbu" secondAttribute="bottom" constant="19" id="7SP-g0-dXq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xnx-sz-2Ds" secondAttribute="trailing" constant="-20" id="4hc-3X-jxI"/>
+                            <constraint firstItem="xnx-sz-2Ds" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="81O-be-0za"/>
                             <constraint firstAttribute="trailing" secondItem="LrQ-1C-Ugy" secondAttribute="trailing" id="DPb-JF-xAV"/>
+                            <constraint firstItem="R33-aK-Qbu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="I2m-OJ-mX2"/>
+                            <constraint firstItem="xnx-sz-2Ds" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="KXq-E4-hCc"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="R33-aK-Qbu" secondAttribute="bottom" constant="10" id="OG4-Um-iWp"/>
                             <constraint firstItem="LrQ-1C-Ugy" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="W6Y-Id-wS4"/>
                             <constraint firstItem="LrQ-1C-Ugy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ib6-Li-kll"/>
                             <constraint firstItem="LrQ-1C-Ugy" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="q5y-0I-Sji"/>
-                            <constraint firstItem="R33-aK-Qbu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xa9-cq-5MK"/>
                         </constraints>
                     </view>
                     <connections>

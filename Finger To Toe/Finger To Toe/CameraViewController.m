@@ -7,8 +7,11 @@
 //
 
 #import "CameraViewController.h"
+#import <AVFoundation/AVFoundation.h>
 
 @interface CameraViewController ()
+
+@property (strong, nonatomic) IBOutlet UIView *cameraView;
 
 @end
 
@@ -16,22 +19,43 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    self.cameraView.backgroundColor = [UIColor redColor];
+}
+
+- (BOOL)prefersStatusBarHidden
+{
+    return YES;
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [self initCamera];
+}
+
+- (void)initCamera
+{
+    AVCaptureSession *session                = [[AVCaptureSession alloc] init];
+    session.sessionPreset                    = AVCaptureSessionPresetPhoto;
+    AVCaptureVideoPreviewLayer *captureLayer = [[AVCaptureVideoPreviewLayer alloc] initWithSession:session];
+    captureLayer.videoGravity                = AVLayerVideoGravityResizeAspectFill;
+    captureLayer.bounds                      = self.view.layer.bounds;//self.cameraView.layer.bounds;
+    captureLayer.position                    = CGPointMake(CGRectGetMidX(self.view.layer.bounds), CGRectGetMidY(self.view.layer.bounds));
+    [self.cameraView.layer addSublayer:captureLayer];
+    
+    AVCaptureDevice *device                  = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
+    NSError *error                           = nil;
+    AVCaptureDeviceInput *input              = [AVCaptureDeviceInput deviceInputWithDevice:device error:&error];
+    if (!input) {
+        NSLog(@"ERROR: trying to open camera: %@", error);
+    } else {
+        [session addInput:input];
+        [session startRunning];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
